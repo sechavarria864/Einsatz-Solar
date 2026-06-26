@@ -86,12 +86,11 @@ h3 {
   margin: 0;
 }
 
-h4,
-label,
-button {
-  font-size: var(--text-base);
+h4 {
+  font-size: var(--text-lg);
   font-weight: var(--font-weight-medium);
   line-height: 1.5;
+  margin: 0;
 }
 
 input,
