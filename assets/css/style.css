@@ -54,7 +54,7 @@ img {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   font-family: Impact, sans-serif;
   font-weight: normal !important;
   text-transform: uppercase;
@@ -63,7 +63,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;   
+  font-size: 3rem;   
   font-family: Impact, sans-serif;
   font-weight: normal !important;
   text-transform: uppercase;
@@ -145,7 +145,7 @@ p {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1.5rem;
   background: #f2e519;
   color: #000000;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
