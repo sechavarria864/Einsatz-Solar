@@ -58,7 +58,7 @@ h1 {
   font-family: Impact, sans-serif;
   font-weight: normal !important;
   text-transform: uppercase;
-  line-height: 3;
+  line-height: 3 !important;
   margin: 0;
 }
 
@@ -67,7 +67,7 @@ h2 {
   font-family: Impact, sans-serif;
   font-weight: normal !important;
   text-transform: uppercase;
-  line-height: 3;
+  line-height: 3 !important;
   margin: 0;
 }
 
