@@ -376,15 +376,8 @@ p {
   margin: 0 0 1rem;
   font-size: 3rem;
   font-weight: normal;
-  line-height: 1.25;   /* changed from 0.95 */
-  color: transparent;       /* changed from #ffffff */
-}
-
-/* ── Highlight effect on H1 ─────────────────────────────── */
-.hero-title {
-  /* Remove the old white color — spans will handle their own color */
-  color: inherit; /* overridden below */
-  line-height: 1.25; /* slightly more room so highlights don't touch */
+  line-height: 1.25;
+  color: #ffffff;
 }
 
 .hl-white,
