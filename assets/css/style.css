@@ -370,7 +370,7 @@ p {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.25;   /* changed from 0.95 */
-  color: inherit;       /* changed from #ffffff */
+  color: transparent;       /* changed from #ffffff */
 }
 
 /* ── Highlight effect on H1 ─────────────────────────────── */
