@@ -368,7 +368,7 @@ p {
 .hero-title {
   margin: 0 0 1rem;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: normal;
   line-height: 1.25;   /* changed from 0.95 */
   color: transparent;       /* changed from #ffffff */
 }
