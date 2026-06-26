@@ -55,6 +55,7 @@ img {
 
 h1 {
   font-size: var(--text-2xl);
+  font-family: Impact, "Arial Narrow", Arial, sans-serif;
   font-weight: var(--font-weight-medium);
   line-height: 1.5;
   margin: 0;
@@ -62,6 +63,7 @@ h1 {
 
 h2 {
   font-size: var(--text-xl);
+  font-family: Impact, "Arial Narrow", Arial, sans-serif;
   font-weight: var(--font-weight-medium);
   line-height: 1.5;
   margin: 0;
