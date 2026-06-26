@@ -384,7 +384,7 @@ p {
 .hl-yellow {
   display: inline;
   color: #000000;
-  font-weight: 700;
+  font-weight: normal;
 
   /* Tight horizontal padding gives the "marker" feel */
   padding: 0.05em 0.18em;
