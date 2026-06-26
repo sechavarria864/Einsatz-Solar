@@ -992,7 +992,7 @@ p {
 .risks-slider__caption h3::before {
   content: '';
   display: block;
-  width: 80%;
+  width: 40%;
   height: 1px;
   background: #F2E519;
   margin-bottom: 10px;
