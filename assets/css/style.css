@@ -970,10 +970,7 @@ p {
 }
 
 .risks-slider__corner-arrow {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-  z-index: 2;
+  display: none;
 }
 
 .risks-slider__caption {
@@ -990,6 +987,15 @@ p {
   font-weight: 700;
   color: #ffffff;
   margin: 0 0 8px;
+}
+
+.risks-slider__caption h3::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #F2E519;
+  margin-bottom: 10px;
 }
 
 .risks-slider__caption p {
