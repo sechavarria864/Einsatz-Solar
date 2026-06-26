@@ -669,7 +669,7 @@ p {
 /* ---------- Layout ---------- */
 .project-size {
   background-color: #001F3F;
-  padding: 80px 4px;
+  padding: 80px 24px;
 }
 
 .project-size__inner {
@@ -823,7 +823,7 @@ p {
    ============================================================ */
 
 .risks-slider {
-  padding: 80px 4px;
+  padding: 80px 24px;
   background: #ffffff;
 }
 
@@ -1831,7 +1831,7 @@ p {
    ============================================================ */
 
 .data-protection {
-  padding: 80px 4px;
+  padding: 80px 24px;
   background: #ffffff;
 }
 
@@ -1927,7 +1927,7 @@ p {
    ============================================================ */
 
 .flexibilitaet {
-  padding: 80px 4px;
+  padding: 80px 24px;
   background: #ffffff;
   overflow-x: hidden;
 }
@@ -2156,7 +2156,7 @@ p {
    ============================================================ */
 
 .angebot {
-  padding: 80px 4px;
+  padding: 80px 24px;
   background-color: #001F3F;
 }
 
@@ -2361,7 +2361,7 @@ p {
    ============================================================ */
 
 .kooi {
-  padding: 80px 4px;
+  padding: 80px 24px;
   background: #ffffff;
 }
 
@@ -2523,7 +2523,7 @@ p {
    ============================================================ */
 
 .faq {
-  padding: 80px 4px;
+  padding: 80px 24px;
   background: #ffffff;
 }
 
