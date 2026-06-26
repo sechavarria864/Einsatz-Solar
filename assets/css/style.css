@@ -152,7 +152,7 @@ p {
 }
 
 .header-inner {
-  max-width: 80rem;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -219,7 +219,7 @@ p {
 
 .mobile-nav {
   display: none;
-  max-width: 80rem;
+  max-width: 1600px;
   margin: 1rem auto 0;
   padding: 0 1.5rem 1rem;
 }
@@ -308,7 +308,7 @@ p {
 }
 
 .hero-container {
-  max-width: 80rem;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -828,7 +828,7 @@ p {
 }
 
 .risks-slider__header {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto 40px;
   padding: 0 24px;
 }
@@ -884,7 +884,7 @@ p {
 }
 
 .risks-slider__slider-wrap {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -1002,7 +1002,7 @@ p {
 }
 
 .risks-slider__bottom {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -1152,7 +1152,7 @@ p {
 }
 
 .how-it-works__inner {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -1296,7 +1296,7 @@ p {
 }
 
 .testimonials__inner {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -1587,7 +1587,7 @@ p {
 }
 
 .prozess__inner {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   overflow: visible;
   padding: 0 24px;
@@ -1836,7 +1836,7 @@ p {
 }
 
 .data-protection__inner {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -1933,7 +1933,7 @@ p {
 }
 
 .flexibilitaet__inner {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -2161,7 +2161,7 @@ p {
 }
 
 .angebot__inner {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -2217,7 +2217,7 @@ p {
 }
 
 .brochure__inner {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -2366,7 +2366,7 @@ p {
 }
 
 .kooi__inner {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -2528,7 +2528,7 @@ p {
 }
 
 .faq__inner {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
