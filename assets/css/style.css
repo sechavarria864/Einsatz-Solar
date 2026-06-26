@@ -369,8 +369,41 @@ p {
   margin: 0 0 1rem;
   font-size: 3rem;
   font-weight: 700;
-  line-height: 0.95;
-  color: #ffffff;
+  line-height: 1.25;   /* changed from 0.95 */
+  color: inherit;       /* changed from #ffffff */
+}
+
+/* ── Highlight effect on H1 ─────────────────────────────── */
+.hero-title {
+  /* Remove the old white color — spans will handle their own color */
+  color: inherit; /* overridden below */
+  line-height: 1.25; /* slightly more room so highlights don't touch */
+}
+
+.hl-white,
+.hl-yellow {
+  display: inline;
+  color: #000000;
+  font-weight: 700;
+
+  /* Tight horizontal padding gives the "marker" feel */
+  padding: 0.05em 0.18em;
+  padding-bottom: 0.08em;
+
+  /* This is the key: clone the bg on every wrapped line */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+
+  /* No border-radius — squared edges like in the image */
+  border-radius: 0;
+}
+
+.hl-white {
+  background-color: #ffffff;
+}
+
+.hl-yellow {
+  background-color: #ffe600; /* matches the yellow in your brand */
 }
 
 .hero-text {
