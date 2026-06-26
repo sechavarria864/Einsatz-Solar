@@ -79,18 +79,18 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.5rem, 4vw, 2.5rem) !important;
-  font-family: Impact, sans-serif;
-  font-weight: normal !important;
-  line-height: 1.5;
-  margin: 0;
-}
-
-h4 {
   font-size: var(--text-lg);
   font-weight: var(--font-weight-medium);
   line-height: 1.5;
   margin: 0;
+}
+
+h4,
+label,
+button {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
 }
 
 input,
