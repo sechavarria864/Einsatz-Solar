@@ -54,7 +54,7 @@ img {
 }
 
 h1 {
-  font-size: var(--text-2xl);
+  font-size: 3rem;
   font-family: Impact, sans-serif;
   font-weight: normal !important;
   text-transform: uppercase;
@@ -63,7 +63,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--text-xl);
+  font-size: 2rem;   
   font-family: Impact, sans-serif;
   font-weight: normal !important;
   text-transform: uppercase;
