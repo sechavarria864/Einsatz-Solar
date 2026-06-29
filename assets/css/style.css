@@ -1940,30 +1940,62 @@ p {
 }
 
 .data-protection__card {
+  position: relative;
+  padding-top: 36px; /* half icon height — space for the float */
   display: flex;
   flex-direction: column;
 }
 
-.data-protection__card img {
-  width: 82px;
-  height: 82px;
-  object-fit: contain;
-  margin-bottom: 16px;
-  flex-shrink: 0;
+.dp-icon-float {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 72px;
+  height: 72px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 }
 
-.data-protection__card h3 {
+.dp-icon-float img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.dp-card-body {
+  background: #ffffff;
+  padding: 48px 20px 24px 20px;
+  border-top: 4px solid #F2E519;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32px), calc(100% - 32px) 100%, 0 100%);
+  flex: 1;
+}
+
+.dp-card-body h3 {
   font-size: 1rem;
   font-weight: 700;
   color: #000000;
-  margin: 0 0 12px;
+  margin: 0 0 8px;
 }
 
-.data-protection__card p {
+.dp-card-body p {
   font-size: 0.875rem;
   line-height: 1.6;
   color: #5C5E62;
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  .data-protection {
+    padding: 48px 24px;
+  }
+
+  .data-protection__grid {
+    grid-template-columns: 1fr;
+    gap: 48px; /* extra gap to accommodate floating icon */
+  }
 }
 
 @media (max-width: 767px) {
