@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Impact';
-  src: url('../fonts/impact.ttf') format('truetype');
+  src: url('../fonts/Impact.ttf') format('truetype'); 
   font-weight: normal;
   font-display: swap;
 }
 
 :root {
   --font-size: 16px;
-  --background: #ffffff;
+  --background: #F4F5F6 ;
   --foreground: #111111;
   --card: #ffffff;
   --card-foreground: #111111;
@@ -61,15 +61,19 @@ img {
 }
 
 h1 {
-  font-size: var(--text-2xl);
-  font-weight: var(--font-weight-medium);
-  line-height: 1.5;
+  font-size: clamp(2.2rem, 5vw, 3.2rem) !important;
+  font-family: Impact, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.3;
   margin: 0;
 }
 
 h2 {
-  font-size: var(--text-xl);
-  font-weight: var(--font-weight-medium);
+  font-size: clamp(2rem, 4vw, 2.8rem) !important;
+  font-family: Impact, sans-serif;
+  font-weight: normal !important;
+  text-transform: uppercase;
   line-height: 1.5;
   margin: 0;
 }
@@ -155,7 +159,7 @@ p {
 }
 
 .header-inner {
-  max-width: 80rem;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -222,7 +226,7 @@ p {
 
 .mobile-nav {
   display: none;
-  max-width: 80rem;
+  max-width: 1280px;
   margin: 1rem auto 0;
   padding: 0 1.5rem 1rem;
 }
@@ -311,7 +315,7 @@ p {
 }
 
 .hero-container {
-  max-width: 80rem;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -349,7 +353,7 @@ p {
 }
 
 .live-badge-desktop {
-  background: #ffffff;
+  background: #F4F5F6 ;
   border-radius: 999px;
   padding: 0.45rem 0.75rem;
   margin-bottom: 1rem;
@@ -369,16 +373,42 @@ p {
 }
 
 .hero-title {
-  margin: 0 0 1rem;
+  margin: 0 0 1.2rem;
   font-size: 3rem;
-  font-weight: 700;
-  line-height: 0.95;
+  font-weight: normal;
+  line-height: 1.25;
   color: #ffffff;
+}
+
+.hl-white,
+.hl-yellow {
+  display: inline;
+  color: #000000;
+  font-weight: normal;
+
+  /* Tight horizontal padding gives the "marker" feel */
+  padding: 0.05em 0.18em;
+  padding-bottom: 0.08em;
+
+  /* This is the key: clone the bg on every wrapped line */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+
+  /* No border-radius — squared edges like in the image */
+  border-radius: 0;
+}
+
+.hl-white {
+  background-color: #ffffff;
+}
+
+.hl-yellow {
+  background-color: #ffe600; /* matches the yellow in your brand */
 }
 
 .hero-text {
   max-width: 40rem;
-  margin: 0 0 1.25rem;
+  margin: 0 0 1.5rem;
   font-size: 1rem;
   line-height: 1.6;
   opacity: 0.9;
@@ -722,7 +752,7 @@ p {
 
 /* ---------- Right: card ---------- */
 .project-size__card {
-  background-color: #ffffff;
+  background-color: #F4F5F6 ;
   padding: 32px;
   position: relative;
   overflow: hidden;
@@ -763,7 +793,7 @@ p {
   font-size: 1rem;
   font-weight: 500;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #F4F5F6 ;
   border: 2px solid #E5E5E5;
   cursor: pointer;
   transition: border-color 0.15s ease, background-color 0.15s ease;
@@ -827,11 +857,11 @@ p {
 
 .risks-slider {
   padding: 80px 24px;
-  background: #ffffff;
+  background: #F4F5F6 ;
 }
 
 .risks-slider__header {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto 40px;
   padding: 0 24px;
 }
@@ -887,7 +917,7 @@ p {
 }
 
 .risks-slider__slider-wrap {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -940,10 +970,7 @@ p {
 }
 
 .risks-slider__corner-arrow {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-  z-index: 2;
+  display: none;
 }
 
 .risks-slider__caption {
@@ -960,6 +987,15 @@ p {
   font-weight: 700;
   color: #ffffff;
   margin: 0 0 8px;
+}
+
+.risks-slider__caption h3::before {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 1px;
+  background: #F2E519;
+  margin-bottom: 10px;
 }
 
 .risks-slider__caption p {
@@ -1005,7 +1041,7 @@ p {
 }
 
 .risks-slider__bottom {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -1028,26 +1064,47 @@ p {
 }
 
 .risks-slider__icon-item {
+  position: relative;
+  padding-top: 36px; /* creates space so icon floats 50% above the card */
   display: flex;
   flex-direction: column;
 }
 
-.risks-slider__icon-item img {
-  width: 56px;
-  height: 56px;
-  object-fit: contain;
-  flex-shrink: 0;
-  margin-bottom: 12px;
+.risks-icon-float {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 72px;
+  height: 72px;
+  background: transparent; /* icon itself is yellow — no background needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 }
 
-.risks-slider__icon-item h3 {
+.risks-icon-float img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.risks-card-body {
+  background: #ffffff;
+  padding: 48px 20px 24px 20px;
+  border-top: 4px solid #F2E519;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32px), calc(100% - 32px) 100%, 0 100%);
+  flex: 1;
+}
+
+.risks-card-body h3 {
   font-size: 1rem;
   font-weight: 700;
   color: #000000;
   margin: 0 0 8px;
 }
 
-.risks-slider__icon-item p {
+.risks-card-body p {
   font-size: 0.875rem;
   line-height: 1.6;
   color: #808187;
@@ -1150,12 +1207,12 @@ p {
 
 .how-it-works {
   padding: 80px 0;
-  background: #ffffff;
+  background: #F4F5F6 ;
   overflow: hidden;
 }
 
 .how-it-works__inner {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -1299,7 +1356,7 @@ p {
 }
 
 .testimonials__inner {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -1349,7 +1406,7 @@ p {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s ease;
-  background: #ffffff;
+  background: #F4F5F6 ;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -1590,7 +1647,7 @@ p {
 }
 
 .prozess__inner {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   overflow: visible;
   padding: 0 24px;
@@ -1717,7 +1774,7 @@ p {
   flex-shrink: 0;
   width: calc(58% - 16px);
   margin-right: 16px;
-  background: #ffffff;
+  background: #F4F5F6 ;
   display: flex;
   flex-direction: column;
   min-height: 420px;
@@ -1835,11 +1892,11 @@ p {
 
 .data-protection {
   padding: 80px 24px;
-  background: #ffffff;
+  background: #F4F5F6 ;
 }
 
 .data-protection__inner {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -1883,30 +1940,63 @@ p {
 }
 
 .data-protection__card {
+  position: relative;
+  padding-top: 36px; /* half icon height — space for the float */
   display: flex;
   flex-direction: column;
 }
 
-.data-protection__card img {
-  width: 82px;
-  height: 82px;
-  object-fit: contain;
-  margin-bottom: 16px;
-  flex-shrink: 0;
+.dp-icon-float {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 72px;
+  height: 72px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 }
 
-.data-protection__card h3 {
+.dp-icon-float img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.20));
+}
+
+.dp-card-body {
+  background: #ffffff;
+  padding: 48px 20px 24px 20px;
+  border-top: 4px solid #F2E519;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32px), calc(100% - 32px) 100%, 0 100%);
+  flex: 1;
+}
+
+.dp-card-body h3 {
   font-size: 1rem;
   font-weight: 700;
   color: #000000;
-  margin: 0 0 12px;
+  margin: 0 0 8px;
 }
 
-.data-protection__card p {
+.dp-card-body p {
   font-size: 0.875rem;
   line-height: 1.6;
   color: #5C5E62;
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  .data-protection {
+    padding: 48px 24px;
+  }
+
+  .data-protection__grid {
+    grid-template-columns: 1fr;
+    gap: 48px; /* extra gap to accommodate floating icon */
+  }
 }
 
 @media (max-width: 767px) {
@@ -1931,12 +2021,12 @@ p {
 
 .flexibilitaet {
   padding: 80px 24px;
-  background: #ffffff;
+  background: #F4F5F6 ;
   overflow-x: hidden;
 }
 
 .flexibilitaet__inner {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -2164,7 +2254,7 @@ p {
 }
 
 .angebot__inner {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -2220,7 +2310,7 @@ p {
 }
 
 .brochure__inner {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -2365,11 +2455,11 @@ p {
 
 .kooi {
   padding: 80px 24px;
-  background: #ffffff;
+  background: #F4F5F6 ;
 }
 
 .kooi__inner {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -2527,11 +2617,11 @@ p {
 
 .faq {
   padding: 80px 24px;
-  background: #ffffff;
+  background: #F4F5F6 ;
 }
 
 .faq__inner {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -2619,6 +2709,10 @@ p {
   margin: 0;
 }
 
+.text-yellow {
+  color: #F2E519;
+}
+
 @media (max-width: 767px) {
   .faq {
     padding: 48px 24px;
@@ -2633,3 +2727,15 @@ p {
     font-size: 0.875rem;
   }
 }
+
+[class$="__accent-bar"] {
+  display: none;
+}
+
+.highlight-yellow {
+  color: #000000;
+  background-color: #F2E519;
+  padding: 0 6px;
+  display: inline;
+}
+
