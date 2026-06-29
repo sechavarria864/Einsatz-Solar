@@ -2709,6 +2709,10 @@ p {
   margin: 0;
 }
 
+.text-yellow {
+  color: #F2E519;
+}
+
 @media (max-width: 767px) {
   .faq {
     padding: 48px 24px;
@@ -2734,3 +2738,4 @@ p {
   padding: 0 6px;
   display: inline;
 }
+
